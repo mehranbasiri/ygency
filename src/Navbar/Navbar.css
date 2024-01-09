@@ -1,0 +1,157 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 10;
+  font-family: "Inter", sans-serif !important;
+}
+.nav-bg-active {
+  background-color: #02050a;
+  transition: all 0.2s ease;
+  animation: 0.7s ease-out navbar;
+}
+@keyframes navbar {
+  0% {
+    transform: translatey(-100%);
+  }
+  50% {
+    transform: translatey(-50%);
+  }
+
+  100% {
+    transform: translatey(0);
+  }
+}
+
+.nav-bg-none {
+  background-color: unset;
+}
+
+.logo-image {
+  width: 180px;
+  margin: 1.5rem;
+}
+.navbar-items {
+  padding: 0 10px;
+
+  text-align: left;
+  cursor: pointer;
+}
+.navbar-item {
+  font-size: 1.1rem;
+}
+
+.navbar-item-box {
+  display: flex;
+  gap: 5px;
+  font-family: "Inter", sans-serif;
+}
+.navbar-item-box svg {
+  font-size: 1.2rem;
+  font-weight: bold;
+  align-items: center;
+  position: relative;
+  top: 15px;
+}
+.navbar-item-box:hover {
+  color: #00d084;
+}
+.nav-list {
+  position: absolute;
+  display: none;
+  list-style: none;
+}
+.navbar-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar-section ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.navbar-items:hover .nav-list {
+  display: block;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  display: inline-block;
+}
+
+.mobila-nav {
+  display: none;
+}
+
+.nav-links-section {
+  text-align: left;
+  padding: 0px 3px;
+}
+
+.search-box svg {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0rem 2rem;
+  cursor: pointer;
+}
+.nav-button {
+  background-color: #35d59a;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  margin: 2rem;
+  cursor: pointer;
+}
+.nav-button:hover {
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+.nav-button svg {
+  position: relative;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #000;
+  top: 15px;
+}
+
+.link-items {
+  background-color: #02050a;
+  color: #fff;
+  padding: 1rem;
+  text-align: left;
+}
+
+.link-item {
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.1rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+.link-items hr {
+  opacity: 0.05;
+  width: 100%;
+}
+
+.link-items li :hover {
+  color: #00d084;
+  transition: all 0.2s ease;
+}
+
+/* md:hidden bg-white fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+duration-500 */
+.navbar-mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
