@@ -1,0 +1,57 @@
+.scroll-text {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  overflow: hidden;
+  justify-content: center;
+  margin: 0 ;
+}
+
+.scroll {
+  white-space: nowrap;
+  margin: 0em 2em;
+  text-align: center;
+  width: 100%;
+}
+
+.scroll div {
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+  width: 100%;
+  height: 250px;
+  background-color: var(--button-primary-bg);
+  align-items: center;
+}
+.scroll p {
+  font-size: 64px;
+  line-height: 10px;
+  text-align: center;
+  width: 100%;
+  
+}
+
+.rightToLeft .scroll-item {
+  width: 100%;
+  animation: RightToLeft 30s infinite linear;
+  align-items: center;
+ 
+  color:var(--dark-color);
+  
+  text-align: center;
+  width: 100%;
+  font-weight: 300;
+}
+@keyframes RightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.rightToLeft .scroll-item svg {
+  font-size: 42px;
+  color: #000;
+}
