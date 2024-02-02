@@ -17,6 +17,7 @@ import aboutShape from "../images/about-image-shape-min.png";
 import { FiArrowUpRight } from "react-icons/fi";
 import ScrollText from "./ScrollText";
 import RecentWorksGallery from "./RecentWorksGallery";
+import TeamMembers from "./TeamMembers/TeamMembers";
 
 const Web_development = () => {
   const control = useAnimation();
@@ -277,6 +278,10 @@ const Web_development = () => {
 
       <div className="recent-work-gallery">
         <RecentWorksGallery />
+      </div>
+
+      <div className="team-members-con">
+        <TeamMembers />
       </div>
     </div>
   );
